@@ -9,6 +9,30 @@ authorLink: 'https://github.com/serverless'
 authorName: 'Serverless, inc.'
 authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 -->
+# swapi-planets
+
+
+#### Crear un planeta
+Endpoint tipo POST: `https://gwncl0qa59.execute-api.us-east-1.amazonaws.com/planets` 
+
+![create](images/createPlanet.png)
+
+
+#### Obtener un planeta
+Endpoint tipo GET: `https://gwncl0qa59.execute-api.us-east-1.amazonaws.com/planets/{id}`
+![getOne](images/getOnePlanet.png)
+
+
+#### Obtener varios planetas con paginación
+Endpoint tipo GET:`https://gwncl0qa59.execute-api.us-east-1.amazonaws.com/planets`
+
+![getAll](images/getAllPlanets.png)
+
+#### Pasos para poder ejecutar los tests
+1. Crear un archivo llamado .env y pegar alli el contenido de env.sample
+2. Setear el perfil que configuro en su entorno en la variable AWS_PROFILE del archivo .env      
+3. Ejecutar el comando `npm run test`
+![getAll](images/tests.png)
 
 # Serverless Framework Node HTTP API on AWS
 
