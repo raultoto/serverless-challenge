@@ -1,25 +1,9 @@
-const hello = (event) => {
-  console.info('Event:', event);
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v3.0! Your function executed successfully!',
-      },
-    ),
-  };
+const { getAllPlanets } = require('./features/planet/getAllPlanets');
+const { getPlanet } = require('./features/planet/getPlanet');
+const { createPlanet } = require('./features/planet/createPlanet');
+
+module.exports = {
+  getAllPlanets,
+  getPlanet,
+  createPlanet,
 };
-const hello2 = (event) => ({
-  return: {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v3.0! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2,
-    ),
-  },
-});
-export { hello, hello2 };
